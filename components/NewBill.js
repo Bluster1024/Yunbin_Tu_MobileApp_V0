@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, Text, Button, StyleSheet,TextInput } from "react-native";
 export default function Settings({ navigation }) {
       const [text,setText]=useState('');
+
  return (
     <View style={{flex:2}}>
       <View style={{flex:1,alignItems: 'center',justifyContent: 'center'}}>

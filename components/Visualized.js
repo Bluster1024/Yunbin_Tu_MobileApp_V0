@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import { View, Text, Button, StyleSheet,TextInput } from "react-native";
+import { View, Text, Button, StyleSheet,TextInput,Image } from "react-native";
+
 
 export default function Visualized({ navigation }){
   return(
     <View style={{flex:1,textAlign: 'center',justifyContent: 'center'}}>
       <View>
+           <Image
+        style={styles.tinyLogo}
+        source={require('@expo/snack-static/react-native-logo.png')}
+      />
         <Text>
           Intend to be a visualized figure of bills
         </Text>
@@ -37,5 +42,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+    tinyLogo: {
+    width: 50,
+    height: 50,
   },
 });
